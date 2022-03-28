@@ -21,3 +21,29 @@ body{
 .titulo span{
     font-size: 2rem;
 }
+
+/* Inicio de nacegacion */
+.nav-bg{
+    background-color: var(--secundario);
+}
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+
+    background-color: red;
+}
+.navegacion-principal{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.navegacion-principal a{   
+
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--blanco);    
+    background-color: var(--primario);
+
+}
