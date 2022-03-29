@@ -29,21 +29,20 @@ body{
 .contenedor{
     width: 120rem;
     margin: 0 auto;
-
-    background-color: red;
 }
 .navegacion-principal{
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+
 }
-
 .navegacion-principal a{   
-
+    padding: 1rem;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
     color: var(--blanco);    
-    background-color: var(--primario);
-
 }
+.navegacion-principal a:hover{  
+    background-color: var(--primario);
+    cursor: pointer;
+ }
