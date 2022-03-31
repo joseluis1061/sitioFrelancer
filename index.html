@@ -11,17 +11,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@500;700&family=Krub:wght@200;500;700&family=Montserrat:wght@400;600;700&family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@500;700&family=Krub:wght@200;500;700&family=Montserrat:wght@400;600;700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
 
-    
+
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
         <h1 class="titulo">Jose Luis Zúñiga <span>Freelancer</span></h1>
     </header>
 
+    <!-- Navegacion -->
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
             <a href="#">Inicio</a>
@@ -31,17 +33,24 @@
         </nav>
     </div>
 
-    <section>
-        <h2 class="titulo">Diseño y Desarrollo Web <span>Freelancer</span></h2>
-        <p>Medellín, Colombia</p>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <circle cx="12" cy="11" r="3" />
-            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-        </svg>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2 class="titulo">Diseño y Desarrollo Web <span>Freelancer</span></h2>
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <p>Medellín, Colombia</p>
+            </div>
+            <a href="#" class="buton">contactar</a>
+        </div>
     </section>
 
-    <main>
+    <!-- Seccion principal -->
+    <main class="contenedor sombra">
         <h2>Mis Servicios</h2>
 
         <section>
@@ -118,7 +127,7 @@
                     <label for="email">Emain</label>
                     <input type="email" placeholder="Tu email">
                 </div>
-                
+
                 <div>
                     <textarea name="" id="email" cols="30" rows="10"></textarea>
                 </div>

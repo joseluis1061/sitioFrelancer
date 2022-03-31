@@ -4,15 +4,63 @@
     --primario: #FFC107;
     --secundario: #0097A7;
     --gris: #757575;
+    --gris-claro: #DFE9F3;
 }
-
-html{
+html {
     font-size: 63.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--gris-claro) 0%, var(--blanco) 100%);
 }
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+/* Boton azul */
+.buton{
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    width: 90%;
+    color: var(--blanco);
+    background-color: var(--secundario);
+}
+@media(min-width: 768px){
+    .buton{
+        width: auto;
+    }
+}
+
+/*Sombreas*/
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    background-color: var(--blanco);
+    padding-top: 2rem;
+    border-radius: 1rem;
+}
+
+/* Hedear */
 .titulo{
     text-align: center;
     font-size: 3.6rem;
@@ -21,19 +69,25 @@ body{
 .titulo span{
     font-size: 2rem;
 }
-
-/* Inicio de nacegacion */
+/* Inicio de navegacion */
 .nav-bg{
     background-color: var(--secundario);
 }
 .contenedor{
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 .navegacion-principal{
     display: flex;
-    justify-content: space-between;
-
+    flex-direction: column;
+    align-items: center;
+}
+@media(min-width: 450px){
+    .navegacion-principal{
+        flex-direction: row;
+        
+        justify-content: center;
+    }
 }
 .navegacion-principal a{   
     padding: 1rem;
@@ -46,3 +100,34 @@ body{
     background-color: var(--primario);
     cursor: pointer;
  }
+
+ /*****Inicio del hero****/
+ .hero{
+     position: relative;
+     background-image: url("../assets/img/hero.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 450px;
+     margin-bottom: 2rem;
+ }
+.contenido-hero{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.contenido-hero h2,
+.contenido-hero p{
+    color: var(--blanco);
+}
+
+.ubicacion{
+    display: flex;
+    align-items: flex-end;
+}
