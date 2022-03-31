@@ -1,2 +1,2 @@
 # sitioFrelancer
-Web estatica modelo para los servicios de un desarrollador Frelancer
+Web estatica modelo para los servicios ofertados por un desarrollador Frelancer.
