@@ -131,3 +131,54 @@ h1,h2,h3{
     display: flex;
     align-items: flex-end;
 }
+
+/* INICIO DEL MAIN */
+
+
+@media(min-width: 768px){
+    .servicios{
+        display: grid;
+        grid-template: 1fr/repeat(3, 1fr);
+        column-gap: 15px;
+    }
+}
+.servicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+.servicio p{
+    line-height: 2rem;
+    text-align: center;
+}
+.servicio .iconos{
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Inicio del formularios */
+.formulario{
+    
+    width: min(60rem, 100%);
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: var(--gris);
+}
+.formulario fieldset{
+    border: none;
+}
+
+
+
