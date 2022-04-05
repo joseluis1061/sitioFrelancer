@@ -9,10 +9,23 @@
 html {
     font-size: 63.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
+/* EFECTOS DE SCROLL SNAP */
+@media(min-width: 768px){
+    .servicios,
+    .navegacion-principal,
+    .formulario{
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
+}
+
+
+
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
@@ -227,16 +240,18 @@ h1,h2,h3{
 .width-sm-100{
     width: 100%;
 }
-@media(min-width: 768px){
-    .width-sm-100{
-        width: auto;
-    }
-}
+
+/* UTILIDADES */
 .flex{
     display: flex;
 }
 .alinear-derecha{
     justify-content: end;
+}
+@media(min-width: 768px){
+    .width-sm-100{
+        width: auto;
+    }
 }
 
 /* INICIO FOOTER */
